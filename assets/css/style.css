@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "source sans pro", sans-serif;
+    font-weight: 200;
+}
+
+#hero-img {
+    background-image: url(../images/Betsie2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.nav-item {
+    font-size: 20px;
+    margin: 10px;
+    border: 3px solid;
+    border-color: #fff;
+    background-color: #000;
+    border-radius: 15%;
+}
+
+.nav-item:hover {
+    background-color: rgb(0, 122, 102);
+    transition: ease-in-out;
+    transition-duration: 150ms;
+}
+
+.nav-home {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.nav-music {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.nav-video {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.container {
+    font-size: 30px;
+    padding: 20px 20px;
+    text-align: center;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+}
+
+.tour-dates {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+
+.button {
+  padding: 5px 5px;
