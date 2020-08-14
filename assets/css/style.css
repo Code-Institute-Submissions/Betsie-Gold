@@ -11,53 +11,120 @@ body {
 }
 
 #hero-img {
-    background-image: url(../images/Betsie2.jpg);
+    background-image: url(../images/Betsie_L.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 100vh;
 }
 
+@media (max-width: 1600px) {
+    #hero-img {
+        background-image: url(../images/Betsie_M.jpeg);
+    }
+}
+
+@media (max-width: 800px) {
+    #hero-img {
+        background-image: url(../images/Betsie_S.jpeg);
+        background-position: 27% 100%;
+    }
+}
+
+
 .navbar-brand {
     font-size: 40px;
-    padding-left: 20px;
-    padding-top: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
 
 .navbar {
-    background-color: transparent !important;
+   
+   background-color: #fff !important;
+   
 }
 
 .nav-item {
-    font-size: 20px;
+    font-size: 25px;
+    color: #000;
     margin: 10px;
-    border: 3px solid;
     border-color: #fff;
-    background-color: #000;
-    border-radius: 15%;
 }
 
 .nav-item:hover {
-    background-color: rgb(0, 122, 102);
-    transition: ease-in-out;
-    transition-duration: 150ms;
+    background-color:rgb(212,175,55);
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #fff;
+    transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
 }
 
 .nav-home {
     padding-left: 8px;
     padding-right: 8px;
+    text-align: center;
 }
 
 .nav-music {
     padding-left: 7px;
     padding-right: 7px;
+    text-align: center;
 }
 
 .nav-video {
     padding-left: 7px;
     padding-right: 7px;
+    text-align: center;
 }
+
+.nav-contact {
+    text-align: center;
+}
+
+.nav-signup {
+    text-align: center;
+}
+
+.navbar-dark .navbar-toggler {
+    border-width: 0px;
+    border-color: #fff;
+    padding: 0;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-color: rgb(212,175,55);
+    position: fixed;
+    top: 0;
+    margin-top: 30px;
+    margin-right: 15px;
+    right: 0;
+    border-radius: 20%;
+    font-size: 40px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+
 
 .container {
     font-size: 30px;
@@ -76,3 +143,36 @@ body {
 
 .button {
   padding: 5px 5px;
+}
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin-top: 80px;
+    padding-top: 30px;
+
+    text-align: center;
+
+}
+
+.social-links li a i {
+    width: 50px;
+    height: 50px;
+    padding: 20px 0;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 7px;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+
+}
+
+.social-links li a i:hover {
+    background: rgb(212,175,55);   
+
