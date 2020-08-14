@@ -114,6 +114,7 @@ body {
     right: 0;
     border-radius: 20%;
     font-size: 40px;
+    z-index: 10;
 }
 
 .navbar-brand {
@@ -175,4 +176,78 @@ footer {
 
 .social-links li a i:hover {
     background: rgb(212,175,55);   
+}
 
+
+form {
+    padding: 40px 40px;
+    margin: 40px 40px;
+    background-color: rgb(212,175,55);
+    font-size: 18px;
+}
+
+#subscribe {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.container {
+    border: 0;
+    width: 100vw;
+
+}
+
+.col-sm {
+    padding: 0;
+    
+}
+
+.col-sm img {
+    border: 10px solid rgb(212,175,55);
+    margin-bottom: 10px;
+    
+}
+
+@media (max-width: 1200px) {
+    .col-sm img {
+        height: 300px;
+        width: 300px;
+        
+    }
+
+}
+
+@media (max-width: 992px) {
+    .col-sm img {
+        height: 200px;
+        width: 200px;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    .col-sm img {
+        height: 150px;
+        width: 150px;
+        
+    }
+
+}
+
+@media (max-width: 576px) {
+    .col-sm img {
+        height: 300px;
+        width: 300px;
+        
+    }
+
+}
+
+h4 {
+    font-family: "source sans pro", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
