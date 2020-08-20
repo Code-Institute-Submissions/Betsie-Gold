@@ -11,23 +11,23 @@ body {
 }
 
 #hero-img {
-    background-image: url(../images/Betsie_L.jpg);
+    background-image: url(../images/BG_Hero_L.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
     height: 100vh;
 }
 
 @media (max-width: 1600px) {
     #hero-img {
-        background-image: url(../images/Betsie_M.jpeg);
+        background-image: url(../images/BG_Hero_M.jpg);
     }
 }
 
 @media (max-width: 800px) {
     #hero-img {
-        background-image: url(../images/Betsie_S.jpeg);
-        background-position: 27% 100%;
+        background-image: url(../images/BG_Hero_S.jpg);
+        background-position: 48% 100%;
     }
 }
 
@@ -42,19 +42,17 @@ body {
 
 .navbar {
    
-   background-color: #fff !important;
+   background-color: #000 !important;
    
 }
 
 .nav-item {
     font-size: 25px;
-    color: #000;
-    margin: 10px;
-    border-color: #fff;
+    margin: 0.5em;
 }
 
 .nav-item:hover {
-    background-color:rgb(212,175,55);
+    background-color: rgb(212,175,55);
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
@@ -62,7 +60,7 @@ body {
 }
 
 .nav-link {
-    color: #000;
+    color: rgb(212,175,55);
 }
 
 .nav-link:hover {
@@ -117,10 +115,6 @@ body {
     z-index: 10;
 }
 
-.navbar-brand {
-    padding: 0;
-}
-
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
@@ -142,15 +136,22 @@ body {
     font-size: 40px;
 }
 
-.button {
+button {
   padding: 5px 5px;
+  color: rgb(212,175,55)!important;
+  border-color: rgb(212,175,55)!important;
+}
+
+.active {
+    text-decoration: underline;
+    
 }
 
 footer {
-    background-color: #525252;
+    background-color: #000;
     color: #fafafa;
     min-height: 120px;
-    margin-top: 80px;
+    margin-top: 45px;
     padding-top: 30px;
 
     text-align: center;
@@ -180,22 +181,29 @@ footer {
 
 
 form {
+    width: 60%;
+    
     padding: 40px 40px;
-    margin: 40px 40px;
+    margin: auto;
     background-color: rgb(212,175,55);
     font-size: 18px;
 }
 
 #subscribe {
     text-align: center;
+    padding-bottom: 20px;
     font-size: 30px;
     font-weight: 200;
     text-transform: uppercase;
 }
 
+
+
 .container {
     border: 0;
     width: 100vw;
+    margin: auto;
+    padding: 20px;
 
 }
 
@@ -207,7 +215,12 @@ form {
 .col-sm img {
     border: 10px solid rgb(212,175,55);
     margin-bottom: 10px;
+    margin-top: 10px;
     
+}
+
+.col {
+    padding: 0;
 }
 
 @media (max-width: 1200px) {
@@ -219,7 +232,7 @@ form {
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .col-sm img {
         height: 200px;
         width: 200px;
@@ -250,4 +263,49 @@ h4 {
     font-family: "source sans pro", sans-serif;
     font-weight: 200;
     font-size: 18px;
+}
+
+h3 {
+    font-family: "source sans pro", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.top-container {
+    margin-top: 25px;
+}
+
+
+.img-box {
+    position: relative;
+} 
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-family: "source sans pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.img-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.img-overlay:hover > * {
+    transform: translateY(0);
 }
