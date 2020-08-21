@@ -31,7 +31,7 @@ body {
 
 @media (max-width: 800px) {
     #hero-img {
-        background-image: url(../images/BG_Hero_S.jpg);
+        background-image: url(../images/BG_Hero_M.jpg);
         background-position: 48% 50px;
         
         
@@ -129,7 +129,7 @@ body {
 
 
 .container {
-    font-size: 30px;
+    font-size: 25px;
     padding: 20px 20px;
     text-align: center;
     border: 1px solid #000;
@@ -145,20 +145,53 @@ body {
 .tour-dates-outer {
     width: 100%;
     height: 50%;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
     line-height: 4em;
+    
+}
+
+.tour-dates-outer div div {
+    border-bottom: 1px solid #000;
+}
+
+@media (max-width: 992px) {
+    .tour-dates-outer div div {
+    border-bottom: 0px;
+    font-size: 25px;
+    }
 }
 
 button {
-  padding: 5px 5px;
+
   color: rgb(212,175,55)!important;
   border-color: rgb(212,175,55)!important;
+}
+
+button:hover {
+    background-color: rgb(3, 89, 104)!important;
 }
 
 .active {
     text-decoration: underline;
     
 }
+
+.twitter-feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 40px 0px;
+    margin-top: 40px
+}
+
+.news-header {
+    color: #fff;
+    font-family: "source sans pro", sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
 
 footer {
     background-color: #000;
@@ -220,7 +253,7 @@ form {
 .subscribe-outer {
     width: 100%;
     height: 50%;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     background-color: #fafafa;
 }
 
@@ -280,8 +313,8 @@ iframe {
 }
 
 h2 {
-    margin-top: 15px;
-    font-size: 40px;
+
+    font-size: 30px;
 }
 
 h4 {
@@ -372,8 +405,18 @@ p a:hover {
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    color: rgb(212,175,55);
     font-size: 25px;
+}
+
+.gotopbtn i {
+   color: rgb(212,175,55);
+   padding: 10px 10px;
+   transition: 0.25s
+}
+
+.gotopbtn i:hover {
+    color: #fff;
+    background-color:rgb(212,175,55);
 }
 
 .contact {
@@ -390,25 +433,43 @@ p a:hover {
 
 @media (max-width: 800px) {
     .contact {
-        height: 70vh;
+        height: 74vh;
     }
 }
 
 @media (max-width: 420px) {
     .contact {
-        height: 60vh;
+        height: 65vh;
     }
 }
 
 
 .contact p {
-    font-size: 28px;
+    font-size: 30px;
     
+}
+
+.contact div a {
+    font-size: 20px;
+    color: rgb(212,175,55);
 }
 
 .contact-txt {
     background-color: #fafafa;
     width: 100%;
     margin: auto;
-    padding: 30px 0;
+    position: relative;
+    top: 22%
+}
+
+@media (max-width: 800px) {
+    .contact-txt {
+        top: 15%;
+    }
+}
+
+@media (max-width: 420px) {
+    .contact-txt {
+        top: 5%;
+    }
 }
