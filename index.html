@@ -26,9 +26,11 @@
 
   <body>
     <header id="hero-img">
+
+<!-- Bootstrap navbar -->
+
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html"><img
-            border="0"
             alt="Betsie Logo"
             id="logo"
             src="assets/images/Betsie_Logo_Gold.png"
@@ -76,6 +78,9 @@
       </nav>
     </header>
     <section id="tour-dates">
+
+    <!-- Bootstrap column layout -->
+
       <div class="container-fluid tour-dates-outer">
         <h2 class="tour-dates-header">TOUR DATES</h2>
 
@@ -91,14 +96,12 @@
               London, UK
             </div>
             <div class="col-sm">
-              <a href="https://www.ticketmaster.com" target="_blank">
-              <button type="button" class="btn btn-outline-info">
-                  TICKETS
-                </button></a
-              >
+              <a href="https://www.ticketmaster.com" target="_blank" role="button" class="btn btn-outline-info">TICKETS</a>
             </div>
           </div>
         </div>
+
+        <span class="line-break"></span>
 
         <div class="container">
           <div class="row">
@@ -112,14 +115,12 @@
               Oxford, UK
             </div>
             <div class="col-sm">
-              <a href="https://www.ticketmaster.com" target="_blank">
-              <button type="button" class="btn btn-outline-info">
-                  TICKETS
-                </button></a
-              >
+              <a href="https://www.ticketmaster.com" target="_blank" role="button" class="btn btn-outline-info">TICKETS</a>
             </div>
           </div>
         </div>
+
+        <span class="line-break"></span>
 
         <div class="container">
           <div class="row">
@@ -133,13 +134,12 @@
               Birmingham, UK
             </div>
             <div class="col-sm">
-              <a href="https://www.ticketmaster.com" target="_blank">
-              <button type="button" class="btn btn-outline-info">
-                  TICKETS
-                </button></a>
+              <a href="https://www.ticketmaster.com" target="_blank" role="button" class="btn btn-outline-info">TICKETS</a>
             </div>
           </div>
         </div>
+
+        <span class="line-break"></span>
 
         <div class="container">
           <div class="row">
@@ -153,15 +153,14 @@
               London, UK
             </div>
             <div class="col-sm">
-              <a href="https://www.ticketmaster.com" target="_blank">
-              <button type="button" class="btn btn-outline-info">
-                  TICKETS
-                </button></a>
+              <a href="https://www.ticketmaster.com" target="_blank" role="button" class="btn btn-outline-info">TICKETS</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Widget taken from twitter -->
 
     <section id="news">
       <div class="twitter-feed">
@@ -182,17 +181,20 @@
             >BETSIEGOLD</a>
           <script
             async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"></script>
+            src="https://platform.twitter.com/widgets.js">
+          </script>
         </div>
       </div>
     </section>
+
+    <!-- Bootstrap form -->
+
     <section id="sign-up-form">
       <div class="container-fluid subscribe-outer">
         <h2 id="subscribe">SUBSCRIBE</h2>
         <h3>Sign up to receive news and updates.</h3>
 
-        <form>
+        <form onsubmit=alert("Success!!")>
           <div class="form-row">
             <div class="col-md-6 mb-3">
               <label for="validationDefault01">First name</label>
@@ -243,10 +245,15 @@
               </label>
             </div>
           </div>
+          
+          
           <button class="btn btn-light" type="submit">Sign Up!</button>
+          
         </form>
       </div>
     </section>
+
+    <!-- Footer links taken and adjusted from resume project -->
 
     <footer class="container-fluid">
       <div id="footer-details" class="row">

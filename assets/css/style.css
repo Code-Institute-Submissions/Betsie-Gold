@@ -1,475 +1,480 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;500;600;700&display=swap");
 
 html {
-    scroll-behavior: smooth;
-}
-
-* {
-
-    margin: 0;
-    padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "source sans pro", sans-serif;
-    font-weight: 200;
+  font-family: "source sans pro", sans-serif;
+  font-weight: 200;
 }
 
+/* Hero image and media queries to swap for lower res on smaller devices */
+
 #hero-img {
-    background-image: url(../images/BG_Hero_L.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    height: 100vh;
+  background-image: url(../images/BG_Hero_L.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 @media (max-width: 1600px) {
-    #hero-img {
-        background-image: url(../images/BG_Hero_M.jpg);
-    }
+  #hero-img {
+    background-image: url(../images/BG_Hero_M.jpg);
+  }
 }
+
+/* centering hero img for phone sizes */
 
 @media (max-width: 800px) {
-    #hero-img {
-        background-image: url(../images/BG_Hero_M.jpg);
-        background-position: 48% 50px;
-        
-        
-    }
+  #hero-img {
+    background-position: 48% 50px;
+  }
 }
 
+/*------------------------------------------- Top Navbar */
 
 .navbar-brand {
-    font-size: 40px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
+/* Overwriting BS colour preset */
+
 .navbar {
-   
-   background-color: #000 !important;
-   
+  background-color: #000 !important;
 }
 
 .nav-item {
-    font-size: 25px;
-    margin: 0.5em;
+  font-size: 20px;
+  margin: 0.5em;
 }
 
 .nav-item:hover {
-    background-color: rgb(212,175,55);
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+  background-color: rgb(212, 175, 55);
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
 }
 
 .nav-link {
-    color: rgb(212,175,55);
+  color: rgb(212, 175, 55);
 }
 
 .nav-link:hover {
-    color: #fff;
-    transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
-    -webkit-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-}
-
-.nav-home {
-    padding-left: 8px;
-    padding-right: 8px;
-    text-align: center;
-}
-
-.nav-music {
-    padding-left: 7px;
-    padding-right: 7px;
-    text-align: center;
-}
-
-.nav-video {
-    padding-left: 7px;
-    padding-right: 7px;
-    text-align: center;
-}
-
-.nav-contact {
-    text-align: center;
-}
-
-.nav-signup {
-    text-align: center;
-}
-
-.navbar-dark .navbar-toggler {
-    border-width: 0px;
-    border-color: #fff;
-    padding: 0;
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-color: rgb(212,175,55);
-    position: absolute;
-    top: 0;
-    margin-top: 30px;
-    margin-right: 15px;
-    right: 0;
-    border-radius: 20%;
-    font-size: 40px;
-    z-index: 10;
-}
-
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
-}
-
-
-.container {
-    font-size: 25px;
-    padding: 20px 20px;
-    text-align: center;
-    border: 1px solid #000;
-    margin-bottom: 15px;
-}
-
-.tour-dates-header {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.tour-dates-outer {
-    width: 100%;
-    height: 50%;
-    padding-bottom: 50px;
-    line-height: 4em;
-    
-}
-
-.tour-dates-outer div div {
-    border-bottom: 1px solid #000;
-}
-
-@media (max-width: 992px) {
-    .tour-dates-outer div div {
-    border-bottom: 0px;
-    font-size: 25px;
-    }
-}
-
-button {
-
-  color: rgb(212,175,55)!important;
-  border-color: rgb(212,175,55)!important;
-}
-
-button:hover {
-    background-color: rgb(3, 89, 104)!important;
+  color: #fff;
+  transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
 }
 
 .active {
-    text-decoration: underline;
-    
+  text-decoration: underline;
 }
 
+/* Nav button padding adjustments */
+
+.nav-home {
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.nav-music {
+  padding-left: 7px;
+  padding-right: 7px;
+  text-align: center;
+}
+
+.nav-video {
+  padding-left: 7px;
+  padding-right: 7px;
+  text-align: center;
+}
+
+.nav-contact {
+  text-align: center;
+}
+
+.nav-signup {
+  text-align: center;
+}
+
+/* Hamburger design */
+
+.custom-toggler .navbar-toggler-icon {
+  background-color: rgb(212, 175, 55);
+  border-radius: 20%;
+  font-size: 40px;
+  margin-right: 15px;
+  margin-top: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+/*------------------------------------------- Tour Dates */
+
+.line-break {
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+@media (min-width:576px) {
+    .line-break {
+        display: none;
+    }
+}
+
+.container {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tour-dates-header {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.tour-dates-outer {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 20px;
+  line-height: 4em;
+}
+
+.tour-dates-outer div div {
+  border-bottom: 1px solid #000;
+}
+
+/* media query to remove bottom border and change font size & line-height for tour dates */
+
+@media (max-width: 992px) {
+  .tour-dates-outer div div {
+    border-bottom: 0;
+    font-size: 20px;
+    line-height: 2em;
+  }
+}
+
+/* Overwriting BS button style */
+
+.btn {
+  color: rgb(212, 175, 55) !important;
+  border-color: rgb(212, 175, 55) !important;
+}
+
+.btn:hover {
+  background-color: rgb(3, 89, 104) !important;
+}
+
+/* Twitter Feed BG div */
+
 .twitter-feed {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    padding: 40px 0px;
-    margin-top: 40px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 40px 0;
+  margin-top: 40px;
 }
 
 .news-header {
-    color: #fff;
-    font-family: "source sans pro", sans-serif;
-    text-align: center;
-    padding-bottom: 25px;
+  color: #fff;
+  font-family: "source sans pro", sans-serif;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
-
-footer {
-    background-color: #000;
-    color: #fafafa;
-    min-height: 120px;
-    padding-top: 30px;
-
-    text-align: center;
-
-}
-
-.social-links li a i {
-    width: 50px;
-    height: 50px;
-    padding: 20px 0;
-    border-radius: 50%;
-    font-size: 25px;
-    line-height: 7px;
-    text-align: center;
-    color: #000;
-    background: #fff;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-
-}
-
-.social-links li a i:hover {
-    background: rgb(212,175,55);   
-}
-
+/*------------------------------------------- Sign up */
 
 form {
-    width: 65%;  
-    padding: 40px 20px;
-    margin: auto;
-    background-color: rgb(212,175,55);
-    font-size: 18px;
-    text-align: center;
-
+  width: 65%;
+  padding: 40px 20px;
+  margin: auto;
+  background-color: rgb(212, 175, 55);
+  font-size: 18px;
+  text-align: center;
 }
 
-
-
-@media (max-width:1200px) {
-    form {
-        width: 80%;
-    }
-}
-    
-
-#subscribe {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-.subscribe-outer {
-    width: 100%;
-    height: 50%;
-    padding-bottom: 100px;
-    background-color: #fafafa;
-}
-
-
-
-
-
-.container {
-    border: 0;
-    width: 100vw;
-    margin: auto;
-    padding: 0;
-
-}
-
-.col-sm {
-    padding: 0;
-    
-}
-
-.col-sm img {
-    border: 10px solid rgb(212,175,55);
-    margin-bottom: 10px;
-    margin-top: 10px;
-    
-}
-
-.col {
-    padding: 0;
-}
-
-iframe {
-    border: 10px solid rgb(212,175,55);
-}
-
-@media (max-width: 768px) {
-    iframe {
-        width: 350px;
-    }
-}
+/* media query to adjust form width */
 
 @media (max-width: 1200px) {
-    .col-sm img {
-        height: 250px;
-        width: 250px;
-        
-    }
+  form {
+    width: 80%;
+  }
+}
 
+#subscribe {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+/* subscribe BG div */
+
+.subscribe-outer {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 100px;
+  background-color: #fafafa;
+}
+
+/*------------------------------------------- Music */
+
+/* img border and margin for overlay style */
+
+.col-sm img {
+  border: 10px solid rgb(212, 175, 55);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* changes in image size for UX */
+
+@media (max-width: 1200px) {
+  .col-sm img {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 @media (max-width: 576px) {
-    .col-sm img {
-        height: 300px;
-        width: 300px;       
-    }
-
+  .col-sm img {
+    height: 300px;
+    width: 300px;
+  }
 }
 
-h2 {
+/* website headings */
 
-    font-size: 30px;
+h2 {
+  font-size: 30px;
 }
 
 h4 {
-    font-family: "source sans pro", sans-serif;
-    font-weight: 200;
-    font-size: 18px;
+  font-family: "source sans pro", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
 }
 
 h3 {
-    font-family: "source sans pro", sans-serif;
-    font-weight: 200;
-    font-size: 28px;
-    text-align: center;
-    padding-bottom: 30px;
+  font-family: "source sans pro", sans-serif;
+  font-weight: 200;
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
+/* Adding space at top and bottom of images and videos for UX */
+
 .top-container {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .bottom-container {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
+/* img overlay design */
 
 .img-box {
-    position: relative;
-} 
+  position: relative;
+}
 
 .image-title {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-family: "source sans pro", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-family: "source sans pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
 }
 
 .img-overlay:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .img-overlay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
+  transform: translateY(20px);
+  transition: transform 0.25s;
 }
 
 .img-overlay:hover > * {
-    transform: translateY(0);
-}
-
-.img-description {
-    margin-bottom: 5px;
+  transform: translateY(0);
 }
 
 p {
-    font-size: 0.75em;
-    margin: 0;
+  font-size: 0.75em;
+  margin: 0;
 }
 
 p a {
-    color: #fff;
+  color: #fff;
 }
 
 p a:hover {
-    color: rgb(212,175,55);
-    text-decoration: none;
+  color: rgb(212, 175, 55);
+  text-decoration: none;
 }
 
-.gotopbtn {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 35px;
-    right: 10px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    font-size: 25px;
+/*------------------------------------------- Video */
+
+.col {
+  padding: 0;
 }
 
-.gotopbtn i {
-   color: rgb(212,175,55);
-   padding: 10px 10px;
-   transition: 0.25s
+iframe {
+  border: 10px solid rgb(212, 175, 55);
 }
 
-.gotopbtn i:hover {
-    color: #fff;
-    background-color:rgb(212,175,55);
+/* resizing video for UX */
+
+@media (max-width: 768px) {
+  iframe {
+    width: 350px;
+  }
 }
+
+/*------------------------------------------- Contact */
+
+/* Contac div layout */
 
 .contact {
-
-    text-align: center;
-    line-height: 40px;
-    height: 79vh;
-    
+  text-align: center;
+  line-height: 40px;
+  height: 79vh;
 }
 
-.contact h2 {
-    margin: 30px 0px; 
-}
+/* media queries so UX looks nicer and footer height is adjusted */
 
 @media (max-width: 800px) {
-    .contact {
-        height: 74vh;
-    }
+  .contact {
+    height: 74vh;
+  }
 }
 
 @media (max-width: 420px) {
-    .contact {
-        height: 65vh;
-    }
+  .contact {
+    height: 65vh;
+  }
 }
 
-
 .contact p {
-    font-size: 30px;
-    
+  font-size: 30px;
 }
 
 .contact div a {
-    font-size: 20px;
-    color: rgb(212,175,55);
+  font-size: 20px;
+  color: rgb(212, 175, 55);
 }
 
+/* Adjusting inner div position for smaller devices */
+
 .contact-txt {
-    background-color: #fafafa;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    top: 22%
+  background-color: #fafafa;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: 22%;
 }
 
 @media (max-width: 800px) {
-    .contact-txt {
-        top: 15%;
-    }
+  .contact-txt {
+    top: 15%;
+  }
 }
 
 @media (max-width: 420px) {
-    .contact-txt {
-        top: 5%;
-    }
+  .contact-txt {
+    top: 5%;
+  }
+}
+
+/* Go to top button design */
+
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 35px;
+  right: 10px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.gotopbtn i {
+  color: rgb(212, 175, 55);
+  padding: 10px 10px;
+  transition: 0.25s;
+}
+
+.gotopbtn i:hover {
+  color: #fff;
+  background-color: rgb(212, 175, 55);
+}
+
+/* media query to remove button for anything smaller than a desktop */
+
+@media (max-width: 1200px) {
+  .gotopbtn {
+    visibility: hidden;
+  }
+}
+
+/*------------------------------------------- Footer */
+
+footer {
+  background-color: #000;
+  color: #fafafa;
+  min-height: 120px;
+  padding-top: 30px;
+
+  text-align: center;
+}
+
+.social-links li a i {
+  width: 50px;
+  height: 50px;
+  padding: 20px 0;
+  border-radius: 50%;
+  font-size: 25px;
+  line-height: 7px;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.social-links li a i:hover {
+  background: rgb(212, 175, 55);
 }
