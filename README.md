@@ -1,6 +1,6 @@
 # Official Website for Betsie Gold
 
-This website has been designed for the female artist Betsie Gold.  It was created with the idea to funnel traffic through to socials and give fans a great visual experience to browse in until they do!
+This website has been designed for the female pop artist Betsie Gold.  It was created with the idea to funnel traffic through to socials and give fans a great visual experience to browse in until they do!
 It is a simple design with only a few pages and scrolling links with an emphasis on the artist's chosen colour scheme. Access to content is simple and the website can be updated easily with new releases and content.
 My motivation behind designing this website is because I play in the live band for Betsie Gold and have been helping her as an artist with visuals, production and general business dealings. Having a professional website to
 send industry contacts to would be a huge asset.
@@ -11,10 +11,23 @@ The website is aimed at fans and newcomers and has all the latest information re
 The site was designed as user friendly as possible with navigation being easy to follow and with the addition of a back to top button for desktop computers.
 Active pages are highlighted and all buttons have hover effects to add to the experience.
 
-![Home Page](images/Home_Page.png)
-![Music Page](images/Music_Page.png)
-![Video Page](images/Video_Page.png)
-![Contact Page](images/Contact_Page.png)
+## Website Wireframes (using balsamiq)
+
+### Home Page
+
+![Home Page](assets/images/Home_Page.png)
+
+### Music Page
+
+![Music Page](assets/images/Music_Page.png)
+
+### Video Page
+
+![Video Page](assets/images/Video_Page.png)
+
+### Contact Page
+
+![Contact Page](assets/images/Contact_Page.png)
 
 ## Features
 ### Existing Features
@@ -40,50 +53,72 @@ Ideally I would also add a store link with a platform where the artist can run h
 
     Used for layout and responsive elements in the website. including row and column layouts, forms and navbar elements.
 
+## User Stories
+
+- As a site visitor, I can be confident that I'm on the right website for Betsie Gold.
+- As a site visitor, I can quickly navigate to social sites if that's where I actually want to end up.
+- As a site visitor, I can see up to date news on Betsie Gold.
+- As a site visitor, I can browse all of the latest musical releases.
+- As a site visitor, I can browse all of the latest video releases.
+- As a site visitor, I can see upcoming events and buy tickets.
+- As a site visitor, I can sign up to the Betsie Gold Newsletter.
+- As a site visitor, I can be sure that my sign up has gone through.
+- As a site visitor, I can easily listen to or buy songs released by Betsie Gold.
+- As a industry visitor, I can easily obtain contact information for Betsie Gold.
+- As a site visitor, I can easily navigate between pages while browsing.
+- As a site visitor, I can have all the same functionality on my phone and have a juicy hamburger menu like most phone apps.
+- As a site visitor, I want to be able to get back to the home page quickly and easily, so I don’t get lost navigating.
+and so the site works like every other site in the world. 
+
 ## Testing
 
 The navigation of the website has been extensively tested and media queries added to ensure the site is responsive.
 
-### Testing implemented 
+### Testing implemented:
 
-#### Home
+- #### Home
 
 The layout of the home page has been tested through Devtools by resizing the window and seeing if all the media queries re-arrange the content to be as user firendly as possible.
-Mobile view has to use a smaller image size for the Hero image which was checked in devtools and confirmed.  The Hero image is set to 100vh so I tested using the various devices in devtools to ensure that the image
-is central and always the full height of the device.
+Mobile view has to use a smaller image size for the Hero image which was checked in devtools and confirmed.  The Hero image is set to 100vh so I tested using the various devices 
+in devtools and also my own personal devices (Ipad, Iphone) to ensure that the image is central and always the full height of the device.
 
-#### Tour
+  - #### Tour
 
 The tour section of the website was tested with the smooth scrolling added to the html tag and confirmed. The ticket link was tested and ensured that the link opened in a new tab with the addition of _blank.
 For smaller devices there is a span added between dates to make the layout more user friendly and to show a clear seperation.  This is then removed for larger devices and a buttom border added for each Div entry.
-This was tested and confirmed through devtools by changing the browser size to make sure the changes were activated depending on the VP size of the device. 
+This was tested and confirmed through devtools by changing the browser size to make sure the changes were activated depending on the VP size of the device. This was also tested on my personal devices as a second 
+confirmation of its functionality.
 
-#### News
+  - #### News
 
 The news section is a simple twitter feed added through https://publish.twitter.com/ which was modified to remove the header and footer for a simpler layout that was less cluttered.  This was tested to make
 sure that the top 2 tweets were always displayed and updated.  This was confirmed after reloading the page after the artist added a new post.
 
-#### Music
+  - #### Music
 
 The features on this page were tested by following all the "Listen" and "Buy" links to ensure they open in a seperate tab with the addition of _blank. The images that are attached to the releases are also scaled
 to use smaller file sizes for mobile devices which was tested with devtools.  The layout of the images also change for mobile and tablet devices which was tested and adjusted to ensure the most visually appealing layout for each.
 
 
-#### Video
+  - #### Video
 
 The video page didn't require a large amount of testing. The only parts that were checked were the "View More" buttons to ensure they opened in a seperate tab and linked to the official youtube channel of the artist.
-To ensure the layout changed for mobile devices I checked the changed through resizing in dev tools to ensure the video links resized and stayed within the device VP.
+To ensure the layout changed for mobile devices I checked the changed through resizing in dev tools to ensure the video links resized and stayed within the device VP. I also used my personal devices to make sure the links worked and videos played while
+still on the site.
 
-#### Sign up
+  - #### Sign up
 
-The sign up form was tested by adding all the relevant input values to see if google ads the correct prediction and also an error if the field isn't filled in before the Submit button would return no error.
-I've also added a basic Success alert, however for the form to work properly and to create a good modal pop-up I would need to dive into JavaScript so that is a feature that's left to be implemented.
+The sign up form was tested by adding all the relevant input values to see if the correct prediction appears and also an error if the field isn't filled in when pushing the submit button.
+I've also added a basic Success Modal, however for the form to work properly and to create a good modal pop-up I would need to dive into JavaScript so that is a feature that's left to be implemented.
 
-#### Contact
+  - #### Contact
 
 The email addressed added into the page were tested to ensure they open a relevant email providor and place the address into the "to" section.
 
 ## Deployment
+
+Set of instructions for how to deploy the work. In steps (deployed to Github Pages)
+You can also do local deployment. Clone locally and open index.html
 
 ## Credits
 
@@ -91,8 +126,12 @@ All the images used in the website were taken and edited by myself on behalf of 
 
 Inspiration for the site was taken from the following sites:
 
-https://www.katyperry.com/
-https://www.upsahl.com/
-https://www.billieeilish.com/
+General research using youtube etc. No work was directly copied.
+
+- https://www.katyperry.com/
+- https://www.upsahl.com/
+- https://www.billieeilish.com/
+
+
 
 ### 
