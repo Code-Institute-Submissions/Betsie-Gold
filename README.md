@@ -11,7 +11,7 @@ The website is aimed at fans and newcomers and has all the latest information re
 The site was designed as user friendly as possible with navigation being easy to follow and with the addition of a back to top button for desktop computers.
 Active pages are highlighted and all buttons have hover effects to add to the experience.
 
-## Website Wireframes (using balsamiq)
+## Website Wireframes (Using Balsamiq)
 
 ### Home Page
 
@@ -40,7 +40,7 @@ a view more button to allow the user to go directly to the artist's Youtube Chan
 
 I'd like to add a dropdown link for the "Buy" and "Listen" icons that allow the user to choose their preffered platform
 The sign-up form needs to be finished so the information gets stored in a directory for future use as a mailing list.
-it would be amazing to add a small game or feature for younger fans to enjoy.  Something like this would be great for social media and back-links.
+It would be amazing to add a small game or feature for younger fans to enjoy.  Something like this would be great for social media and back-links.
 Ideally I would also add a store link with a platform where the artist can run her own sales and distribution or merchandise.
 
 ## Technologies Used
@@ -69,12 +69,13 @@ Ideally I would also add a store link with a platform where the artist can run h
 - As a site visitor, I can have all the same functionality on my phone and have a juicy hamburger menu like most phone apps.
 - As a site visitor, I want to be able to get back to the home page quickly and easily, so I don’t get lost navigating.
 and so the site works like every other site in the world. 
+- 
 
-## Testing
+## Testing 
 
-The navigation of the website has been extensively tested and media queries added to ensure the site is responsive.
+The navigation of the website has been extensively tested and media queries added to ensure the site is responsive. The whole website was also tested by my partner extensively to help to identify any bugs or navigational pitfalls.
 
-### Testing implemented:
+### Testing implemented: 
 
 - #### Home
 
@@ -84,7 +85,8 @@ in devtools and also my own personal devices (Ipad, Iphone) to ensure that the i
 
   - #### Tour
 
-The tour section of the website was tested with the smooth scrolling added to the html tag and confirmed. The ticket link was tested and ensured that the link opened in a new tab with the addition of _blank.
+The tour section of the website was tested with the smooth scrolling added to the html tag and confirmed. The ticket link was tested and ensured that the link opened in a new tab with the addition of _blank. 
+The link destination in this case is Ticketmaster.com However for a fully funcitoning site this would direct to the actual events.
 For smaller devices there is a span added between dates to make the layout more user friendly and to show a clear seperation.  This is then removed for larger devices and a buttom border added for each Div entry.
 This was tested and confirmed through devtools by changing the browser size to make sure the changes were activated depending on the VP size of the device. This was also tested on my personal devices as a second 
 confirmation of its functionality.
@@ -106,16 +108,24 @@ The video page didn't require a large amount of testing. The only parts that wer
 To ensure the layout changed for mobile devices I checked the changed through resizing in dev tools to ensure the video links resized and stayed within the device VP. I also used my personal devices to make sure the links worked and videos played while
 still on the site.
 
-  - #### Sign up
+  - #### Sign up (more detail in filling out and whether validation is correct)
 
-The sign up form was tested by adding all the relevant input values to see if the correct prediction appears and also an error if the field isn't filled in when pushing the submit button.
-I've also added a basic Success Modal, however for the form to work properly and to create a good modal pop-up I would need to dive into JavaScript so that is a feature that's left to be implemented.
+The sign up form was tested by adding all the relevant input values to see if the correct prediction appears and also a validation error if the field wasn't filled in when pushing the submit button.
+I've also added a basic Success Modal, however for the form to work properly and to create a good modal pop-up I would need to dive into JavaScript. On this occasion my Mentor provided the necessary Javascript for the modal to work.
 
   - #### Contact
 
 The email addressed added into the page were tested to ensure they open a relevant email providor and place the address into the "to" section.
 
-## Deployment
+## Deployment & Local Deploy (bullet pointed instructions do this click here etc) 
+
+
+in github in settings make available in github. (once pushed) everytime you push then the master updates.
+locally - starts at github then download source code as Zip file. double click index.html.
+git clone. must have Git software installed. for use locally
+
+how can other developers continue to work on this?
+how can I make this publically available so anyone can access?
 
 Set of instructions for how to deploy the work. In steps (deployed to Github Pages)
 You can also do local deployment. Clone locally and open index.html
@@ -126,12 +136,14 @@ All the images used in the website were taken and edited by myself on behalf of 
 
 Inspiration for the site was taken from the following sites:
 
-General research using youtube etc. No work was directly copied.
-
 - https://www.katyperry.com/
 - https://www.upsahl.com/
 - https://www.billieeilish.com/
 
+General research was done using youtube/google. No work was directly copied.
 
+Dick Vlaanderen - Javascript for Bootstrap Modal
 
 ### 
+
+mention ticket links would be going to actual event instead of ticketmaster mai site.  When in other page the scroll button stops early, issue that couldn't be resolved.
