@@ -108,7 +108,7 @@ The video page didn't require a large amount of testing. The only parts that wer
 To ensure the layout changed for mobile devices I checked the changed through resizing in dev tools to ensure the video links resized and stayed within the device VP. I also used my personal devices to make sure the links worked and videos played while
 still on the site.
 
-  - #### Sign up (more detail in filling out and whether validation is correct)
+  - #### Sign up
 
 The sign up form was tested by adding all the relevant input values to see if the correct prediction appears and also a validation error if the field wasn't filled in when pushing the submit button.
 I've also added a basic Success Modal, however for the form to work properly and to create a good modal pop-up I would need to dive into JavaScript. On this occasion my Mentor provided the necessary Javascript for the modal to work.
@@ -146,4 +146,4 @@ Dick Vlaanderen - Javascript for Bootstrap Modal
 
 ### 
 
-mention ticket links would be going to actual event instead of ticketmaster mai site.  When in other page the scroll button stops early, issue that couldn't be resolved.
+
