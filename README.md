@@ -117,18 +117,22 @@ I've also added a basic Success Modal, however for the form to work properly and
 
 The email addressed added into the page were tested to ensure they open a relevant email providor and place the address into the "to" section.
 
-## Deployment & Local Deploy (bullet pointed instructions do this click here etc) 
+## Deployment & Local Deploy
 
+### Github Pages Deployment
 
-in github in settings make available in github. (once pushed) everytime you push then the master updates.
-locally - starts at github then download source code as Zip file. double click index.html.
-git clone. must have Git software installed. for use locally
+* Once Project was finished it was then pushed to Github.
+* Head to Github.com, login, then select the project repository.
+* Click the settings tab and scroll down to the Github Pages section.
+* Select the Master Branch in the "Source" section, followed by the root folder.
+* Click save and the page should become live on the link provided above.
 
-how can other developers continue to work on this?
-how can I make this publically available so anyone can access?
+### Local Deployment
 
-Set of instructions for how to deploy the work. In steps (deployed to Github Pages)
-You can also do local deployment. Clone locally and open index.html
+* Login to Github and select the project repository.
+* Click on the Gitpod dropdown and download the files as a ZIP.
+* Ensure that Git software is installed locally.
+* Expand the ZIP file and double click the index.html file
 
 ## Credits
 

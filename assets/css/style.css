@@ -322,6 +322,9 @@ h3 {
 .img-overlay > * {
   transform: translateY(20px);
   transition: transform 0.25s;
+  -moz-transition: transform 0.25s;
+  -webkit-transition: transform 0.25s;
+  -o-transition: transform 0.25s;
 }
 
 .img-overlay:hover > * {
